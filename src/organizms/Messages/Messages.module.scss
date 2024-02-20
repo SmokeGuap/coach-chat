@@ -1,0 +1,14 @@
+.messages {
+  height: 78vh;
+  overflow: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 20px;
+}
+
+@media screen and (max-width: 1023px) {
+  .messages {
+    height: 79vh;
+  }
+}

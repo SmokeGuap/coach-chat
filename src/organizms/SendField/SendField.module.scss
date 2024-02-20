@@ -1,0 +1,130 @@
+@import '../../styles/variables';
+
+.sendField {
+  display: flex;
+  border: 1px solid $grey2;
+  margin: 20px;
+
+  .trainerButton {
+    background: none;
+    border-radius: 0px;
+    width: 70px;
+    height: 60px;
+    color: $brand;
+
+    &:hover {
+      background: none;
+    }
+    &:first-of-type {
+      color: $cancel;
+    }
+    &:nth-of-type(2) {
+      color: $purple;
+    }
+    &:disabled {
+      color: $grey2;
+    }
+  }
+
+  .trainerButtonStart {
+    &:first-of-type {
+      color: $success;
+    }
+  }
+
+  &:hover {
+    .trainerButton:not(:disabled) {
+      background-color: $brand;
+      color: $white;
+      &:first-of-type {
+        background-color: $cancel;
+      }
+      &:first-of-type.trainerButtonStart {
+        background-color: $success;
+      }
+    }
+
+    .sendButton:not(:disabled) {
+      background-color: $purple;
+      color: $white;
+    }
+  }
+
+  .sendButton {
+    background: none;
+    border-radius: 0px;
+    width: 70px;
+    height: 60px;
+    color: $brand;
+
+    &:disabled {
+      color: $grey2;
+    }
+  }
+
+  .menuButton {
+    background: none;
+    border-radius: 0px;
+    width: 70px;
+    height: 60px;
+  }
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.time {
+  width: 70px;
+  color: $grey2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .sendField {
+    position: relative;
+    .trainerButton {
+      top: -55px;
+      &:first-of-type {
+        right: 140px;
+        position: absolute;
+      }
+      &:nth-of-type(2) {
+        right: 70px;
+        position: absolute;
+      }
+      &:nth-of-type(3) {
+        right: 0px;
+        position: absolute;
+      }
+    }
+
+    &:hover {
+      .trainerButton:not(:disabled) {
+        background-color: transparent;
+        &:first-of-type {
+          color: $cancel;
+          background-color: transparent;
+        }
+        &:nth-of-type(2) {
+          color: $purple;
+        }
+        &:nth-of-type(3) {
+          color: $brand;
+        }
+        &:first-of-type.trainerButtonStart {
+          background-color: transparent;
+          color: $success;
+        }
+      }
+      .sendButton {
+        &:hover:not(:disabled) {
+          background-color: transparent;
+          color: $brand;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+@import '../../styles/variables';
+
+.chatClose {
+  width: 70%;
+  padding: 15px 20px 50px;
+  margin: 23px 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+}
+
+.error {
+  margin: 4px 0 4px;
+  width: 100%;
+  font-size: 10px;
+  line-height: 20px;
+  text-align: center;
+  color: $errorServerText;
+  background-color: $errorServerBackground;
+}
+
+.navButton {
+  color: $grey3;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+
+  .arrowBack {
+    width: 20px;
+  }
+}
+
+.title {
+  color: $brand;
+  font-size: 34px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.download {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  &Button {
+    border: none;
+    width: max-content;
+    height: max-content;
+
+    &:hover {
+      background-color: inherit;
+      color: $brand;
+    }
+  }
+
+  &Format {
+    position: relative;
+    color: $grey2;
+    padding-right: 10px;
+
+    &::after {
+      position: absolute;
+      top: 5px;
+      right: 0px;
+      display: block;
+      content: '';
+      width: 1px;
+      height: 14px;
+      background-color: $grey2;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .chatClose {
+    width: auto;
+    margin: 8px;
+  }
+  .download {
+    justify-content: flex-start;
+    position: relative;
+    gap: 5px;
+
+    &Button {
+      position: relative;
+      left: 20px;
+    }
+    &Format {
+      position: relative;
+      left: 20px;
+      &::after {
+        display: none;
+      }
+    }
+    &Icon {
+      position: absolute;
+      left: 0;
+    }
+  }
+}
