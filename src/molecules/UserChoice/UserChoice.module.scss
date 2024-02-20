@@ -1,0 +1,61 @@
+@import '../../styles/variables';
+
+.container {
+  background: #ffffff;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 124px;
+}
+
+.logo {
+  margin: 60px;
+}
+
+.header {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.navButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0px 0px;
+  width: 280px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 23px;
+  color: #ffffff;
+  background-color: $brand;
+  border: none;
+
+  &Brand {
+    color: #ffffff;
+    background-color: $brand;
+    border: none;
+  }
+
+  &Transparent {
+    color: $brand;
+    background-color: transparent;
+    border: 1px solid $brand;
+  }
+
+  &:hover {
+    background-color: $brandHover;
+    color: #ffffff;
+  }
+
+  &:active {
+    border: none;
+    background-color: $success;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .container {
+    box-shadow: none;
+  }
+}

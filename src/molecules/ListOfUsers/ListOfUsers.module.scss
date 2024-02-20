@@ -1,0 +1,35 @@
+@import '../../styles/variables';
+
+.list {
+  width: 30%;
+  background-color: $white;
+}
+
+.userCount {
+  font-weight: 700;
+  padding: 20px;
+  border-top: 2px solid $brand;
+}
+
+.users {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 1023px) {
+  .list {
+    font-size: 14px;
+    position: absolute;
+    right: 10px;
+    top: 16px;
+    width: 240px;
+    background-color: $white;
+  }
+
+  .userCount {
+    font-weight: 400;
+    padding: 14px 16px;
+    background-color: $grey;
+    border-top: none;
+  }
+}
