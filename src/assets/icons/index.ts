@@ -1,0 +1,12 @@
+export { default as LogoIcon } from './logo.svg';
+export { default as LogoIconLetter } from './logoLetter.svg';
+export { default as ArrowBack } from './arrowBack.svg';
+export { default as CloseEye } from './closeEye.svg?react';
+export { default as OpenEye } from './openEye.svg?react';
+export { default as Remove } from './remove.svg?react';
+export { default as Menu } from './menu.svg?react';
+export { default as CheckerOn } from './checkerOn.svg?react';
+export { default as CheckerOff } from './checkerOff.svg?react';
+export { default as Lock } from './lock.svg?react';
+export { default as Download } from './download.svg?react';
+export * from './trainerButtons';
