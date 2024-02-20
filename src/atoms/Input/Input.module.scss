@@ -1,0 +1,36 @@
+@import '../../styles/variables';
+
+.inputWrapper {
+  color: #000;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  width: max-content;
+}
+
+.input {
+  padding-left: 10px;
+  height: 45px;
+  border: 1px solid $disabled; 
+
+  &Error {
+    border: 1px solid $error;
+    background: $errorBackground;
+  }
+
+  &:focus {
+    border: 1px solid $blackLight;
+  }
+}
+
+.showPassButton {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  top: -32px;
+  left: 240px;
+  cursor: pointer;
+}

@@ -1,0 +1,75 @@
+@import '../../styles/variables';
+
+.message {
+  position: relative;
+  width: 50%;
+  padding-right: 15px;
+
+  &User {
+    align-self: flex-end;
+    padding-left: 15px;
+  }
+}
+
+.usernameUser {
+  text-align: end;
+}
+
+.text {
+  padding: 20px;
+  background-color: $brand;
+  color: $white;
+
+  &User {
+    background-color: $grey;
+    color: inherit;
+  }
+
+  &Correct {
+    background-color: $brand;
+    color: $white;
+  }
+
+  .time {
+    position: absolute;
+    font-size: 8px;
+    right: 27px;
+    bottom: 0px;
+  }
+}
+
+.checker {
+  position: absolute;
+  top: 24px;
+  left: -20px;
+}
+
+@media screen and (max-width: 1023px) {
+  .message {
+    width: 100%;
+    padding-right: 52px;
+
+    &User {
+      padding-right: 0px;
+      padding-left: 52px;
+    }
+  }
+
+  .text {
+    .time {
+      right: 64px;
+    }
+
+    &User {
+      .time {
+        right: 12px;
+      }
+    }
+  }
+
+  .checker {
+    position: absolute;
+    top: 24px;
+    left: 0px;
+  }
+}

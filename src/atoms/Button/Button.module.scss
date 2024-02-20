@@ -1,0 +1,34 @@
+@import '../../styles/variables';
+
+.button {
+  width: 280px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 23px;
+
+  &Brand {
+    color: #ffffff;
+    background-color: $brand;
+    border: none;
+  }
+
+  &Transparent {
+    color: $brand;
+    background-color: transparent;
+    border: 1px solid $brand;
+  }
+
+  &:hover {
+    background-color: $brandHover;
+    color: #ffffff;
+  }
+
+  &:active {
+    border: none;
+    background-color: $success;
+  }
+
+  &:disabled {
+    background-color: $disabled;
+  }
+}

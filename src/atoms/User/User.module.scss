@@ -1,0 +1,21 @@
+@import '../../styles/variables';
+
+.user {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid $grey;
+  color: $grey2;
+
+  &Auth {
+    color: $grey3;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .user {
+    padding: 14px 16px;
+    border: none;
+  }
+}
